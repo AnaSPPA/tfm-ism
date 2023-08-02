@@ -11,9 +11,9 @@ npm start
 mkdir fastapi-backend
 cd fastapi-backend
 python -m venv fastapi-venv
-fastapi-venv\Scripts\activate #source venv/bin/activate en Linux
+..\fastapi-venv\Scripts\activate #source venv/bin/activate en Linux
 pip install fastapi uvicorn
-uvicorn main:app --reload
+uvicorn src.main:app --reload
 
 
 python --version

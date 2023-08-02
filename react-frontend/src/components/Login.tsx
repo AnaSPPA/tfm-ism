@@ -10,6 +10,7 @@ const Login: React.FC = () => {
 
   const handleLogin = async () => {
     try {
+      console.log("User: " + username)
       const response = await fetch("http://localhost:8000/login/", {
         method: "POST",
         headers: {
